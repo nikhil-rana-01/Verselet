@@ -9,9 +9,6 @@ class Get_Poems(scrapy.Spider):
 	start_urls = ["http://kavitakosh.org/kk/index.php"]
 	def parse(self, response):
 		authors = response.css("div.poet-list-section")
-		file = open('dataset.csv', mode='w')
-		poem_writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-
 		author_links = response.css('div.poet-list-section a::attr(href)').getall()
 		for author_link in author_links:
 			complete_link = "http://kavitakosh.org" + author_link
