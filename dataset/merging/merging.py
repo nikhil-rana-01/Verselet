@@ -1,6 +1,6 @@
 import pickle
 import csv
-with open ('poems (1).obj','rb') as fin, open ('collection.txt','r') as fin2, open('data_merged.csv','w',newline='',encoding='utf-8') as fout :
+with open ('poems.obj','rb') as fin, open ('collection.txt','r') as fin2, open('data_merged.csv','w',newline='',encoding='utf-8') as fout :
     poems = []
     poet_titles = []
     # poets = []
