@@ -2,7 +2,7 @@
 import pickle
 import csv
 #opening the required files for merging .obj file contains the data collected through beautiful soap and .txt file contains the data of the poets and poems
-with open ('poems (1).obj','rb') as b_soup, open ('collection.txt','r') as scrapped, open('data_merged.csv','w',newline='',encoding='utf-8') as merger :
+with open ('poems.obj','rb') as b_soup, open ('collection.txt','r') as scrapped, open('data_merged.csv','w',newline='',encoding='utf-8') as merger :
     all_poems = []
     poet_titles = []
     # poets = []
